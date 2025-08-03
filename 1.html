@@ -1,245 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RelyTailors</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bespoke Clothing</title>
+    <!-- Google Font for Royal Look -->
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Montserrat', sans-serif;
-      background: white;
-      color: #111;
+      font-family: 'montserrat', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: #fff;
     }
 
-    .header {
-      width: 100%;
-      border-bottom: 1px solid #ddd;
-      padding: 20px 30px;
-      position: relative;
-    }
-
-    .nav-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo a {
-      font-size: 1.8rem;
-      font-weight: 700;
-      text-decoration: none;
-      color: #111;
-      letter-spacing: 1px;
-      margin-left: 39rem;
-    }
-
-    .icon-group {
-      display: flex;
-      gap: 25px;
-    }
-
-    .icon-group i {
-      font-size: 16px;
-      cursor: pointer;
-      color: #111;
-      transition: color 0.3s ease;
-    }
-
-    .icon-group i:hover {
-      color: #666;
-    }
-
-    .hamburger {
-      display: none;
-      font-size: 24px;
-      cursor: pointer;
-    }
-
-    .nav-bar {
-      margin-top: 20px;
-    }
-
-    .nav-list {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-      margin-bottom: 2rem;
-    }
-
-    .nav-list a {
-      text-decoration: none;
-      color: #111;
-      font-size: 14px;
-      font-weight: 500;
-      transition: color 0.3s ease;
-      /* margin-bottom: 30rem; */
-    }
-
-    .nav-list a:hover {
-      color: #555;
-      transform: scale(1.05);
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .icon-group {
-        display: none;
-      }
-
-      .hamburger {
-        display: block;
-        color: #111;
-        /* margin-right: 7rem; */
-        /* left: 0%; */
-        /* right: 0%; */
-      }
-
-      .nav-list {
-        display: none;
-        flex-direction: column;
-        background: white;
-        padding: 20px;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-      }
-
-      .nav-list.active {
-        display: flex;
-      }
-      .logo a{
-        margin-left: 6.2rem;
-      }
-    }
-
-
-    .hero-section {
-  position: relative;
-  width: 100%;
-  height: 90vh;
-  background: url('assets/background.jpg') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* <-- This dulls the image */
-  z-index: 1;
-}
-
-.hero-overlay {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.hero-overlay h1 {
-  color: white;
-  font-size: 4rem;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.hero-button {
-  display: inline-block;
-  padding: 12px 28px;
-  background-color: transparent;
-  color: white;
-  font-weight: 500;
-  text-decoration: none;
-  /* border-radius: 4px; */
-  font-size: 14px;
-  border: 2px solid white;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-.hero-button:hover {
-  background-color: #111;
-  color: white;
-}
-@media (max-width: 768px) {
-  .hero-section {
-    height: 70vh;
-  }
-
-  .hero-overlay h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero-button {
-    padding: 10px 22px;
-    font-size: 13px;
-  }
-}
-
+   
   </style>
 </head>
 <body>
+<section>
+  <h2>Bespoke from head to toe</h2>
 
-  <header class="header">
-    <div class="nav-top">
-      <div class="logo"><a href="#">RELYTAILORS</a></div>
-
-      <div class="icon-group" id="desktop-icons">
-        <i class="fas fa-user"></i>
-        <i class="fas fa-bag-shopping"></i>
-        <i class="fas fa-search"></i>
+  <div class="section">
+    <button class="scroll-btn left" onclick="scrollSection(this, -1)">&#8249;</button>
+    <div class="scroll-container">
+      <div class="item">
+        <img src="assets/bg2.jpg" alt="Custom Suit">
+        <img class="hover-img" src="assets/bg3.jpg" alt="Custom Suit Side">
+        <p>Custom Suits</p>
       </div>
-
-      <div class="hamburger" onclick="toggleMenu()">
-        <i id="menu-icon" class="fas fa-bars"></i>
+      <div class="item">
+        <img src="shirt-front.jpg" alt="Custom Shirt">
+        <img class="hover-img" src="shirt-side.jpg" alt="Custom Shirt Side">
+        <p>Custom Shirts</p>
+      </div>
+      <div class="item">
+        <img src="blazer-front.jpg" alt="Blazer">
+        <img class="hover-img" src="blazer-side.jpg" alt="Blazer Side">
+        <p>Blazers</p>
+      </div>
+      <div class="item">
+        <img src="wedding-front.jpg" alt="Wedding Suit">
+        <img class="hover-img" src="wedding-side.jpg" alt="Wedding Suit Side">
+        <p>Wedding</p>
+      </div>
+      <div class="item">
+        <img src="polo-front.jpg" alt="Polo Shirt">
+        <img class="hover-img" src="polo-side.jpg" alt="Polo Shirt Side">
+        <p>Polo Shirts</p>
+      </div>
+      <div class="item">
+        <img src="kurta-front.jpg" alt="Kurta Suit">
+        <img class="hover-img" src="kurta-side.jpg" alt="Kurta Suit Side">
+        <p>Kurta Suits</p>
       </div>
     </div>
-
-    <nav class="nav-bar">
-      <ul class="nav-list" id="navLinks">
-        <li><a href="#">SUITS</a></li>
-        <li><a href="#">BLAZERS</a></li>
-        <li><a href="#">PANTS</a></li>
-        <li><a href="#">SHIRTS</a></li>
-        <li><a href="#">KURTAS</a></li>
-        <li><a href="#">CONTACT</a></li>
-        <li><a href="#">ABOUT</a></li>
-      </ul>
-    </nav>
-  </header>
-
-
-  <!-- hero section  -->
-   <section class="hero-section">
-  <div class="hero-overlay">
-    <h1>Contemporary Heritage</h1>
-    <a href="#" class="hero-button">View Products</a>
+    <button class="scroll-btn right" onclick="scrollSection(this, 1)">&#8250;</button>
   </div>
 </section>
-
-
   <script>
-    function toggleMenu() {
-      const nav = document.getElementById('navLinks');
-      const icon = document.getElementById('menu-icon');
-      nav.classList.toggle('active');
-      icon.classList.toggle('fa-bars');
-      icon.classList.toggle('fa-times');
+    function scrollSection(btn, direction) {
+      const section = btn.parentElement;
+      const container = section.querySelector('.scroll-container');
+      container.scrollBy({ left: direction * 380, behavior: 'smooth' });
     }
   </script>
 

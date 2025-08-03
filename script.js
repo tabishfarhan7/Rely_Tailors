@@ -70,3 +70,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   testimonials.forEach(t => observer.observe(t));
 });
+
+
+// bespoke section 
+function scrollSection(btn, direction) {
+      const section = btn.parentElement;
+      const container = section.querySelector('.scroll-container');
+      container.scrollBy({ left: direction * 380, behavior: 'smooth' });
+    }
