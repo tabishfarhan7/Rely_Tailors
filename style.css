@@ -685,3 +685,217 @@ body {
     font-size: 0.85rem;
   }
 }
+
+
+/* contact section  */
+
+.contact-section {
+  padding: 60px 20px;
+  background-color: white;
+  color: black;
+  font-family: 'montserrat', sans-serif;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-container h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.contact-container h2 {
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 17px;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #666;
+}
+
+.form-group label span {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.form-group input {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #333;
+  background-color: #f8f8f8;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #111;
+}
+
+.submitt-btnn {
+  width: 150px;
+  height: 60px;
+  align-self: left;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 100;
+  background-color: transparent;
+  /* border: 2px solid black; */
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submitt-btnn:hover {
+  background-color: #373535;
+  color: white;
+  /* translate: scale(1.05);    */
+}
+
+
+/* footer  */
+/* Font Awesome CDN Required in HTML <head>:
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+*/
+
+.farhanpharma-footer {
+  background: linear-gradient(to right, #0c0c0c, #1e1e1e);
+  color: #e4e4e4;
+  padding: 50px 20px 20px;
+  font-family: 'montserrat', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-about h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+}
+
+.footer-about h2 span {
+  color: whitesmoke;
+}
+
+.footer-about p {
+  margin: 15px 0;
+  line-height: 1.6;
+  color: #bbb;
+}
+
+.footer-address i {
+  color: whitesmoke;
+  margin-right: 8px;
+}
+
+.footer-links h3,
+.footer-social h3 {
+  color: white;
+  margin-bottom: 12px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: burlywood;
+  translate: scale(1.2);
+  transition: all 0.3s ease in-out;
+}
+
+.footer-social .social-icons a {
+  margin-right: 15px;
+  color: #ccc;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+  color: burlywood;
+  translate: scale(1.2);
+  transition: all 0.3s ease in-out;
+}
+
+.footer-social .dev-credit {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-social .dev-credit span {
+  color: whitesmoke;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-about,
+  .footer-links,
+  .footer-social {
+    margin-bottom: 30px;
+  }
+
+  .footer-social .social-icons a {
+    margin: 0 10px;
+  }
+}
+
