@@ -16,48 +16,55 @@
 </head>
 <body>
   
-
-    <!-- header -->
+<!-- header  -->
  <header class="header">
-    <div class="nav-top">
-      <div class="logo"><a href="#">RELYTAILORS</a></div>
-
-      <div class="icon-group" id="desktop-icons">
-        <i class="fas fa-user"></i>
-        <i class="fas fa-bag-shopping"></i>
-        <i class="fas fa-search"></i>
-      </div>
-
-      <div class="hamburger" onclick="toggleMenu()">
-        <i id="menu-icon" class="fas fa-bars"></i>
-      </div>
+  <div class="nav-top">
+    <!-- Hamburger (only visible on mobile) -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <i id="menu-icon" class="fas fa-bars"></i>
     </div>
 
-    <nav class="nav-bar">
-      <ul class="nav-list" id="navLinks">
-        <li><a href="#">SUITS</a></li>
-        <li><a href="#">BLAZERS</a></li>
-        <li><a href="#">PANTS</a></li>
-        <li><a href="#">SHIRTS</a></li>
-        <li><a href="#">KURTAS</a></li>
-        <li><a href="#">CONTACT</a></li>
-        <li><a href="#">ABOUT</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Logo -->
+    <div class="logo"><a href="#">RELYTAILORS</a></div>
+
+    <!-- Login & Cart -->
+    <div class="right-icons">
+      <a href="login.html" class="login-link">Login</a>
+      <div class="cart-btn">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count">0</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Menu -->
+  <nav class="nav-bar">
+    <ul class="nav-list" id="navLinks">
+      <li><a href="#">SUITS</a></li>
+      <li><a href="#">BLAZERS</a></li>
+      <li><a href="#">PANTS</a></li>
+      <li><a href="#">SHIRTS</a></li>
+      <li><a href="#">KURTAS</a></li>
+      <li><a href="#">CONTACT</a></li>
+      <li><a href="#">ABOUT</a></li>
+    </ul>
+  </nav>
+</header>
+
+
 
 
   <!-- hero section  -->
    <section class="hero-section">
   <div class="hero-overlay">
     <h1>Contemporary Heritage</h1>
-    <a href="#" class="hero-button">View Products</a>
+    <a href="#bespoke" class="hero-button">View Products</a>
   </div>
 </section>
 
 
 
-<section>
+<section id="bespoke">
   <h2 class="bespoke">Bespoke from head to toe</h2>
 
   <div class="section">

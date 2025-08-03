@@ -20,7 +20,13 @@
     elements.forEach(el => observer.observe(el));
   });
 
+// cart count 
+let cartCount = 0;
 
+function addToCart() {
+  cartCount++;
+  document.getElementById("cart-count").textContent = cartCount;
+}
 
   //   message section 
 document.addEventListener("DOMContentLoaded", () => {
