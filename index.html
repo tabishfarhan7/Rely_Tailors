@@ -7,7 +7,7 @@
 
   <!-- Google Font for Royal Look -->
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
@@ -18,43 +18,45 @@
   
 
     <!-- header -->
- <header>
-  <nav>
-    <ul class="nav-left">
-      <li><a href="#">Collections</a></li>
-      <li><a href="#">Lookbook</a></li>
-      <li><a href="#">Fabrics</a></li>
-    </ul>
+ <header class="header">
+    <div class="nav-top">
+      <div class="logo"><a href="#">RELYTAILORS</a></div>
 
-    <div class="logo"><a href="#">Noble Needle</a></div>
+      <div class="icon-group" id="desktop-icons">
+        <i class="fas fa-user"></i>
+        <i class="fas fa-bag-shopping"></i>
+        <i class="fas fa-search"></i>
+      </div>
 
-    <ul class="nav-right">
-      <li><a href="#">Weddings</a></li>
-      <li><a href="#">Tailoring Process</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-
-    <!-- Hamburger -->
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i id="menu-icon" class="fas fa-bars"></i>
+      </div>
     </div>
-  </nav>
 
-  <!-- Mobile menu container -->
-  <div class="mobile-menu"></div>
-</header>
+    <nav class="nav-bar">
+      <ul class="nav-list" id="navLinks">
+        <li><a href="#">SUITS</a></li>
+        <li><a href="#">BLAZERS</a></li>
+        <li><a href="#">PANTS</a></li>
+        <li><a href="#">SHIRTS</a></li>
+        <li><a href="#">KURTAS</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">ABOUT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- hero section  -->
+   <section class="hero-section">
+  <div class="hero-overlay">
+    <h1>Contemporary Heritage</h1>
+    <a href="#" class="hero-button">View Products</a>
+  </div>
+</section>
 
 
 
-  <section class="hero">
-    <img src="assets/background.jpg" alt="Custom Menswear Background">
-    <div class="hero-content">
-      <h1>CUSTOM MENSWEAR,<br>DHANBAD</h1>
-      <button>BOOK YOUR FIRST FITTING</button>
-    </div>
-  </section>
 
 
 
@@ -158,6 +160,18 @@
 </section>
 
 
+<!-- VISIT US SECTION -->
+<section class="visit-section">
+  <div class="visit-image-container">
+    <img src="assets/shop.jpg" alt="Arbaz Tailors Dhanbad" class="visit-image" />
+
+    <div class="visit-text">
+      <h2>VISIT US<br>IN DHANBAD</h2>
+      <p>BY APPOINTMENT ONLY</p>
+      <a href="#booking" class="btn-outline">BOOK YOUR FIRST FITTING</a>
+    </div>
+  </div>
+</section>
 
   <script src="script.js"></script>
 </body>

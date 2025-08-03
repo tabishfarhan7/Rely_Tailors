@@ -1,35 +1,10 @@
-const hamburger = document.querySelector('.hamburger');
-  const navLeft = document.querySelector('.nav-left');
-  const navRight = document.querySelector('.nav-right');
-  const mobileMenu = document.createElement('div');
-  mobileMenu.classList.add('mobile-menu');
-  document.querySelector('header').appendChild(mobileMenu);
-
-  // Combine both menus into mobile menu
-  mobileMenu.innerHTML = `<ul>${navLeft.innerHTML}${navRight.innerHTML}</ul>`;
-
-  // Toggle menu on click
-  hamburger.addEventListener('click', () => {
-    mobileMenu.classList.toggle('show');
-    hamburger.classList.toggle('active');
-  });
-
-
-   const faders = document.querySelectorAll('.fade');
-    const appearOptions = { threshold: 0.3 };
-
-    const appearOnScroll = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, appearOptions);
-
-    faders.forEach(el => appearOnScroll.observe(el));
-
-
+ function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      const icon = document.getElementById('menu-icon');
+      nav.classList.toggle('active');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-times');
+    }
     // sliding in property 
     document.addEventListener("DOMContentLoaded", () => {
     const elements = document.querySelectorAll('.slide-in-right');
