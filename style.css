@@ -140,6 +140,7 @@ body {
  .right-icons {
     position: absolute;
     right: 20px;
+    margin-right: -1.5rem;
   }
 
   .login-link {

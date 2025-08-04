@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Menswear Detroit</title>
+
+  <!-- Google Font for Royal Look -->
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/suits.css">
+
+
+
+</head>
+<body>
+  
+<!-- header  -->
+ <header class="header">
+  <div class="nav-top">
+    <!-- Hamburger (only visible on mobile) -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <i id="menu-icon" class="fas fa-bars"></i>
+    </div>
+
+    <!-- Logo -->
+    <div class="logo"><a href="../index.html">RELYTAILORS</a></div>
+
+    <!-- Login & Cart -->
+    <div class="right-icons">
+      <a href="login.html" class="login-link">Login</a>
+      <div class="cart-btn">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count">0</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Menu -->
+  <nav class="nav-bar">
+    <ul class="nav-list" id="navLinks">
+      <li><a href="#">SUITS</a></li>
+      <li><a href="#">BLAZERS</a></li>
+      <li><a href="#">PANTS</a></li>
+      <li><a href="#">SHIRTS</a></li>
+      <li><a href="#">KURTAS</a></li>
+      <li><a href="#">CONTACT</a></li>
+      <li><a href="#">ABOUT</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- top section  -->
+<section class="collection-hero">
+  <img src="../assets/shop.jpg" alt="Suits Collection" class="collection-bg">
+
+  <div class="collection-text">
+    <h2>Discover Our Exclusive Suits Collection</h2>
+    <p>
+      Explore our handpicked range of premium suits designed for modern elegance 
+      and timeless style. From finely tailored business formals to sophisticated 
+      wedding ensembles, our collection ensures you look your best for every occasion. 
+      Crafted with superior fabrics and attention to detail, each suit embodies 
+      comfort, durability, and class.
+    </p>
+    <a href="#" class="collection-btn">Shop Now</a>
+  </div>
+</section>
+
+
+<!-- Suits Collection Section -->
+<section class="suits-collection">
+  <h2 class="collection-title">Our Exclusive Suits Collection</h2>
+  <div class="suits-grid">
+
+    <!-- Looping suits -->
+    <div class="suit-card">
+      <div class="suit-image">
+        <img src="../assets/suit1.png" alt="Beige Formal Suit">
+        <div class="hover-overlay">
+          <button class="add-to-cart" onclick="addToCart('Beige Formal Suit')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="suit-info">
+        <p>Classic Beige Suit</p>
+        <span>$450</span>
+      </div>
+    </div>
+
+    <div class="suit-card">
+      <div class="suit-image">
+        <img src="../assets/suit2.png" alt="Casual Beige Jacket">
+        <div class="hover-overlay">
+          <button class="add-to-cart" onclick="addToCart('Casual Beige Jacket')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="suit-info">
+        <p>Casual Beige Jacket</p>
+        <span>$380</span>
+      </div>
+    </div>
+
+    <div class="suit-card">
+      <div class="suit-image">
+        <img src="../assets/suit3 .png" alt="Grey Checked Blazer">
+        <div class="hover-overlay">
+          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+      </div>
+      <div class="suit-info">
+        <p>Grey Checked Blazer</p>
+        <span>$420</span>
+      </div>
+    </div>
+
+    <!-- Add More Suits -->
+    <div class="suit-card">
+      <div class="suit-image">
+        <img src="suit4.jpg" alt="Navy Blue Suit">
+        <div class="hover-overlay">
+          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+      </div>
+      <div class="suit-info">
+        <p>Navy Blue Suit</p>
+        <span>$480</span>
+      </div>
+    </div>
+
+    <div class="suit-card">
+      <div class="suit-image">
+        <img src="suit5.jpg" alt="Charcoal Business Suit">
+        <div class="hover-overlay">
+          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+      </div>
+      <div class="suit-info">
+        <p>Charcoal Business Suit</p>
+        <span>$500</span>
+      </div>
+    </div>
+
+    <div class="suit-card">
+      <div class="suit-image">
+        <img src="suit6.jpg" alt="Slim Fit Grey Suit">
+        <div class="hover-overlay">
+          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+      </div>
+      <div class="suit-info">
+        <p>Slim Fit Grey Suit</p>
+        <span>$440</span>
+      </div>
+    </div>
+
+    <div class="suit-card">
+      <div class="suit-image">
+        <img src="suit7.jpg" alt="Wedding White Suit">
+        <div class="hover-overlay">
+          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+      </div>
+      <div class="suit-info">
+        <p>Wedding White Suit</p>
+        <span>$600</span>
+      </div>
+    </div>
+
+    <div class="suit-card">
+      <div class="suit-image">
+        <img src="suit8.jpg" alt="Double Breasted Navy Suit">
+        <div class="hover-overlay">
+          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+      </div>
+      <div class="suit-info">
+        <p>Double Breasted Navy</p>
+        <span>$520</span>
+      </div>
+    </div>
+
+    <div class="suit-card">
+      <div class="suit-image">
+        <img src="suit9.jpg" alt="Classic Black Tuxedo">
+        <div class="hover-overlay">
+          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+      </div>
+      <div class="suit-info">
+        <p>Classic Black Tuxedo</p>
+        <span>$650</span>
+      </div>
+    </div>
+
+    <div class="suit-card">
+      <div class="suit-image">
+        <img src="suit10.jpg" alt="Brown Checked Suit">
+        <div class="hover-overlay">
+          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+      </div>
+      <div class="suit-info">
+        <p>Brown Checked Suit</p>
+        <span>$430</span>
+      </div>
+    </div>
+
+    <div class="suit-card">
+      <div class="suit-image">
+        <img src="suit11.jpg" alt="Grey Pinstripe Suit">
+        <div class="hover-overlay">
+          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+      </div>
+      <div class="suit-info">
+        <p>Grey Pinstripe Suit</p>
+        <span>$470</span>
+      </div>
+    </div>
+
+    <div class="suit-card">
+      <div class="suit-image">
+        <img src="suit12.jpg" alt="Dark Blue Business Suit">
+        <div class="hover-overlay">
+          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+      </div>
+      <div class="suit-info">
+        <p>Dark Blue Business Suit</p>
+        <span>$490</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Toast Notification -->
+<div id="toast"></div>
+<script src="../script.js"></script>
+</body>
+</html>
