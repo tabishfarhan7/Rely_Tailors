@@ -408,6 +408,9 @@ body {
   .suits-grid {
     grid-template-columns: 1fr;
     gap: 1.2rem;
+    /* align-items: center; */
+    justify-content: center;
+    /* margin-top: 1rem; */
   }
 }
 
