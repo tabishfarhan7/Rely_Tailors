@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
+  /* outline: 1px solid red; */
 }
 
 html {
@@ -13,6 +15,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: #fdfdfc;
   color: #333;
+  overflow-x: hidden;
 }
 
 
@@ -21,6 +24,7 @@ body {
   border-bottom: 1px solid #ddd;
   padding: 20px 30px;
   position: relative;
+  /* overflow-x: hidden; */
 }
 
 .nav-top {
@@ -135,14 +139,24 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
   .hamburger {
-    display: block; /* Show hamburger */
+    display: block;
+    margin-left: -2rem; 
   }
  .right-icons {
-    position: absolute;
-    right: 20px;
-    margin-right: -1.5rem;
-  }
+  position: absolute;
+  /* right: 0.2rem; smaller and safer */
+  margin-right: .5rem ; 
+  /* font-size: small; */
+  height: 5px;
+  width: 5px;
+}
+.cart-btn{
+  font-size: 10px;
+}
 
+.cart-btn i,span{
+  font-size: 10px;
+}
   .login-link {
     display: none; /* Hide login link */
   }
@@ -174,6 +188,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* overflow-x: hidden; */
 }
 
 .hero-section::before {
@@ -219,6 +234,15 @@ body {
 @media (max-width: 768px) {
   .hero-section {
     height: 70vh;
+    width: 100%;
+    /* overflow-x: hidden; */
+    box-sizing: border-box;
+  }
+
+  img,.hero-section {
+    max-width: 100%;
+    /* height: 100%; */
+    overflow-x: hidden;
   }
 
   .hero-overlay h1 {
@@ -343,6 +367,7 @@ body {
   .bespoke{
     font-size: 1.5rem;
     text-align: center;
+    margin-right: 3rem;
   }
   .scroll-btn.left {
     left: -20px;
