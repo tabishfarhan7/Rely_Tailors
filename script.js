@@ -20,29 +20,37 @@
     elements.forEach(el => observer.observe(el));
   });
 
-// cart count 
-let cartCount = 0;
+let cart = new Set();
 
-function addToCart() {
-  cartCount++;
-  document.getElementById("cart-count").textContent = cartCount;
+function addToCart(itemName) {
+  const toast = document.getElementById("toast");
+
+  if (cart.has(itemName)) {
+    showToast(`"${itemName}" is already in your cart.`, false);
+  } else {
+    cart.add(itemName);
+    updateCartCount();
+    showToast(`"${itemName}" has been added to your cart!`, true);
+  }
 }
 
-  //   message section 
-document.addEventListener("DOMContentLoaded", () => {
-    const guidedContent = document.querySelector('.message-content');
+function updateCartCount() {
+  const countElement = document.getElementById("cart-count");
+  if (countElement) {
+    countElement.textContent = cart.size;
+  }
+}
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          guidedContent.classList.add('show');
-        }
-      });
-    }, { threshold: 0.3 });
+function showToast(message, isSuccess) {
+  const toast = document.getElementById("toast");
+  toast.textContent = message;
+  toast.style.backgroundColor = isSuccess ? "#4CAF50" : "#f44336";
+  toast.classList.add("show");
 
-    observer.observe(guidedContent);
-  });
-
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 2500);
+}
 
 
 
@@ -84,3 +92,25 @@ function scrollSection(btn, direction) {
       const container = section.querySelector('.scroll-container');
       container.scrollBy({ left: direction * 380, behavior: 'smooth' });
     }
+
+
+    // show all button in suits section 
+  function showAllSuits() {
+  const hidden = document.getElementById("hidden-suits");
+  const button = document.getElementById("view-all-btn");
+
+  hidden.style.display = "grid";
+  hidden.style.gridTemplateColumns = "repeat(auto-fit, minmax(220px, 1fr))";
+  hidden.style.gap = "2rem";
+  hidden.style.marginTop = "2rem";
+
+  button.style.display = "none";
+}
+
+function showAllSuits() {
+  document.querySelectorAll('.hidden-suit').forEach(card => {
+    card.classList.remove('hidden-suit');
+  });
+  document.getElementById('view-all-btn').style.display = 'none';
+}
+
