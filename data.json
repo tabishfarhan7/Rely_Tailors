@@ -1,0 +1,199 @@
+{
+  "suits": {
+    "hero": {
+      "title": "Discover Our Exclusive Suits Collection",
+      "description": "Discover our meticulously curated collection of premium suits, each piece custom-tailored to perfection for the discerning gentleman.",
+      "image": "../assets/shop.jpg"
+    },
+    
+    "products": [
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit1.png"
+      },
+      {
+        "name": "Classic Black Suit",
+        "price": "$300",
+        "image": "../assets/suit2.png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit3 .png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit4.png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit5.png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit6.png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit7.png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit8.png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit9.png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit10.png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit11.png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit12.png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit13.png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit14.png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit15.png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit16.png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit17.png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit18.png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit19.png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit20.png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit21.png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit22.png"
+      },
+      {
+        "name": "Royal Blue Suit",
+        "price": "$350",
+        "image": "../assets/suit23.png"
+      }
+      
+     
+    ]
+  },
+  "blazers": {
+    "hero": {
+      "title": "Explore Our Premium Blazer Range",
+      "description": "Classic elegance, modern comfort, impeccable style – blazers crafted with traditional tailoring excellence and contemporary flair.",
+      "image": "../assets/bg3.jpg"
+    },
+    "products": [
+      {
+        "name": "Navy Blue Blazer",
+        "price": "$220",
+        "image": "../assets/blazer1.webp"
+      },
+      {
+        "name": "Navy Blue Blazer",
+        "price": "$220",
+        "image": "../assets/blazer2.webp"
+      },
+      {
+        "name": "Navy Blue Blazer",
+        "price": "$220",
+        "image": "../assets/blazer3.webp"
+      },
+      {
+        "name": "Navy Blue Blazer",
+        "price": "$220",
+        "image": "../assets/blazer4.webp"
+      },
+      {
+        "name": "Navy Blue Blazer",
+        "price": "$220",
+        "image": "../assets/blazer5.webp"
+      },
+      {
+        "name": "Navy Blue Blazer",
+        "price": "$220",
+        "image": "../assets/blazer6.webp"
+      },
+      {
+        "name": "Navy Blue Blazer",
+        "price": "$220",
+        "image": "../assets/blazer7.webp"
+      },
+      {
+        "name": "Navy Blue Blazer",
+        "price": "$220",
+        "image": "../assets/blazer8.webp"
+      },
+      {
+        "name": "Navy Blue Blazer",
+        "price": "$220",
+        "image": "../assets/blazer9.webp"
+      },
+      {
+        "name": "Navy Blue Blazer",
+        "price": "$220",
+        "image": "../assets/blazer10.webp"
+      },
+      {
+        "name": "Navy Blue Blazer",
+        "price": "$220",
+        "image": "../assets/blazer11.webp"
+      },
+      {
+        "name": "Navy Blue Blazer",
+        "price": "$220",
+        "image": "../assets/blazer12.webp"
+      }
+            
+    ]
+  }
+}

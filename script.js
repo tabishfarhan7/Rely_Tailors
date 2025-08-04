@@ -128,3 +128,41 @@ function showAllSuits() {
   document.getElementById('view-all-btn').style.display = 'none';
 }
 
+// for dynamically page loading 
+document.addEventListener("DOMContentLoaded", () => {
+  const type = new URLSearchParams(window.location.search).get("type") || "suits";
+
+  fetch("../data.json")
+    .then(res => res.json())
+    .then(data => {
+      if (!data[type]) return;
+
+      const { hero, products } = data[type];
+
+      // Update hero section
+      document.querySelector("#hero-section h2").textContent = hero.title;
+      document.querySelector("#hero-section p").textContent = hero.description;
+      document.querySelector("#hero-section img").src = hero.image;
+
+      // Update products
+      const container = document.querySelector("#product-collection .suits-grid");
+      container.innerHTML = ""; // Clear default cards
+
+      products.forEach(product => {
+        container.innerHTML += `
+          <div class="suit-card">
+            <div class="suit-image">
+              <img src="${product.image}" alt="${product.name}">
+              <div class="hover-overlay">
+                <button class="add-to-cart" onclick="addToCart('${product.name}')">Add to Cart</button>
+              </div>
+            </div>
+            <div class="suit-info">
+              <p>${product.name}</p>
+              <span>${product.price}</span>
+            </div>
+          </div>
+        `;
+      });
+    });
+});

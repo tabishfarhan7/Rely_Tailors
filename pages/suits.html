@@ -40,10 +40,10 @@
   <!-- Navigation Menu -->
   <nav class="nav-bar">
     <ul class="nav-list" id="navLinks">
-      <li><a href="#">SUITS</a></li>
-      <li><a href="#">BLAZERS</a></li>
+      <li><a href="suits.html?type=suits">SUITS</a></li>
+      <li><a href="suits.html?type=blazers">BLAZERS</a></li>
+      <li><a href="suits.html?type=shirts">SHIRTS</a></li>
       <li><a href="#">PANTS</a></li>
-      <li><a href="#">SHIRTS</a></li>
       <li><a href="#">KURTAS</a></li>
       <li><a href="#">CONTACT</a></li>
       <li><a href="#">ABOUT</a></li>
@@ -52,7 +52,7 @@
 </header>
 
 <!-- top section  -->
-<section class="collection-hero">
+<section class="collection-hero" id="hero-section">
   <img src="../assets/shop.jpg" alt="Suits Collection" class="collection-bg">
 
   <div class="collection-text">
@@ -69,7 +69,7 @@
 </section>
 
 <!-- Suits Collection Section -->
-<section class="suits-collection">
+<section class="suits-collection" id="product-collection">
   <h2 class="collection-title">Our Exclusive Suits Collection</h2>
 
   <div class="suits-grid">
@@ -375,10 +375,7 @@
 
  
 </section>
-<!-- View All Button -->
-<div class="view-all-container">
-  <button id="view-all-btn" class="view-all-btn" onclick="showAllSuits()">View All</button>
-</div>
+
 <!-- hero section  -->
 <section class="tailor-hero">
   <div class="overlay"></div>
@@ -441,5 +438,6 @@
 
 
 <script src="../script.js"></script>
+<script src="../data.json"></script>
 </body>
 </html>
