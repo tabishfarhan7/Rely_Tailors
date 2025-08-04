@@ -344,6 +344,12 @@ body {
     font-size: 1.5rem;
     text-align: center;
   }
+  .scroll-btn.left {
+    left: -20px;
+    margin-left: 1rem;
+  }
+  
+  
 }
 /* sliding in property  */
 
