@@ -68,6 +68,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     observer.observe(guidedContent);
   });
+//message content section 
+  document.addEventListener("DOMContentLoaded", () => {
+  const messageContent = document.querySelector('.message-content');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        messageContent.classList.add('show');
+      }
+    });
+  }, { threshold: 0.3 });
+
+  observer.observe(messageContent);
+});
 
 
   // Testimonials scroll animation
