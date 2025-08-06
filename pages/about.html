@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Menswear Detroit</title>
+
+  <!-- Google Font for Royal Look -->
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/about.css">
+ <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  
+<!-- header  -->
+ <header class="header">
+  <div class="nav-top">
+    <!-- Hamburger (only visible on mobile) -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <i id="menu-icon" class="fas fa-bars"></i>
+    </div>
+
+    <!-- Logo -->
+    <div class="logo"><a href="../index.html">RELYTAILORS</a></div>
+
+    <!-- Login & Cart -->
+    <div class="right-icons">
+      <a href="login.html" class="login-link">Login</a>
+      <div class="cart-btn">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count">0</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Menu -->
+  <nav class="nav-bar">
+    <ul class="nav-list" id="navLinks">
+      <li><a href="suits.html?type=suits">SUITS</a></li>
+      <li><a href="suits.html?type=blazers">BLAZERS</a></li>
+      <li><a href="suits.html?type=shirts">SHIRTS</a></li>
+      <li><a href="#">PANTS</a></li>
+      <li><a href="#">KURTAS</a></li>
+      <li><a href="#">CONTACT</a></li>
+      <li><a href="#">ABOUT</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="about-section">
+    <div class="about-content">
+      <h1>About Rely Tailors</h1>
+      <p class="highlight">Crafting Confidence, One Stitch at a Time</p>
+      <p>
+        At Rely Tailors, we believe that every outfit should be a reflection of your personality. Our tailors design custom garments that fit you flawlessly and elevate your style.
+      </p>
+      <p>
+        From bespoke suits to elegant alterations, we combine tradition with modern precision. Every stitch, every fold, speaks of our passion.
+      </p>
+      <button class="btn-about">Explore Our Craft</button>
+    </div>
+
+    <div class="about-image">
+      <img id="dynamicImage" src="../assets/tailor.jpg" alt="Tailor at work" />
+    </div>
+  </section>
+
+
+<!-- owner section  -->
+
+
+  <section class="owner-section-container">
+    <div class="owner-section-image-wrapper">
+      <img src="../assets/ceo.jpg" alt="Owner of Rely Tailors" />
+    </div>
+
+    <div class="owner-section-content">
+      <h2 class="owner-section-title">Meet the Owner</h2>
+      <p class="owner-section-subtitle">
+        <strong>Mr. Arbaz Shahid </strong>, the founder and visionary behind <strong>Rely Tailors</strong>, brings over 25 years of experience in custom tailoring and luxury garment crafting. With a deep-rooted passion for precision stitching, fabric mastery, and elegant designs, Mr. Malik has transformed Rely Tailors into a trusted name known for bespoke suits, ethnic wear, and bridal craftsmanship. <br><br>
+        His leadership, customer-first philosophy, and attention to detail have been instrumental in building a brand that stands for trust, style, and exceptional quality.
+      </p>
+
+  <div class="owner-section-stats">
+    <div class="owner-section-stat">
+    <h3 class="stat-counter" data-target="20" data-plus="true">0</h3>
+    <p>Years of Experience</p>
+  </div>
+  <div class="owner-section-stat">
+    <h3 class="stat-counter" data-target="5000" data-plus="true">0</h3>
+    <p>Clients Served</p>
+  </div>
+  <div class="owner-section-stat">
+    <h3 class="stat-counter" data-target="95">0</h3>
+    <p>Positive Feedback (%)</p>
+  </div>
+  <div class="owner-section-stat">
+    <h3 class="stat-counter" data-target="500" data-plus="true">0</h3>
+    <p>Custom Outfits</p>
+  </div>
+</div>
+    </div>
+  </section>
+
+
+<!-- service section -->
+
+  <section class="services-section">
+    <h2 style="font-size: 3.2rem;font-weight: 300; color: #0f1c2e;">Our Services</h2>
+
+    <div class="services-container">
+
+      <div class="service-card" id="card1">
+        <img src="../assets/sewing.jpg" alt="Tailor Sewing" class="service-img">
+        <div class="service-info">
+          <div class="service-number">1</div>
+          <h3 class="service-title">Tailor Sewing</h3>
+          <p class="service-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-card" id="card2">
+        <img src="../assets/tailor2.jpg" alt="Measurement" class="service-img">
+        <div class="service-info">
+          <div class="service-number">2</div>
+          <h3 class="service-title">Measurement</h3>
+          <p class="service-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-card" id="card3">
+        <img src="../assets/bg2.jpg" alt="Ready-made" class="service-img">
+        <div class="service-info">
+          <div class="service-number">3</div>
+          <h3 class="service-title">Ready-made</h3>
+          <p class="service-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- about us section  -->
+
+
+  <section class="custom-about-section">
+    <div class="custom-about-left">
+      <div class="custom-img-wrapper">
+        <img src="../assets/shop.jpg" alt="Man with Suit">
+      </div>
+      <!-- <div class="custom-img-overlay">
+        <img src="../assets/blazer1.webp" alt="Tailor Woman">
+      </div> -->
+    </div>
+    <div class="custom-about-right">
+      <h2>About our tailor house</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+      <button class="custom-about-btn" id="customAboutBtn">MORE ABOUT US</button>
+    </div>
+  </section>
+
+
+
+  <!-- custom service section  -->
+
+
+  <section class="feature-section-container">
+    <h2 class="feature-section-title">Why use our service?</h2>
+    <p class="feature-section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Suspendisse varius enim in eros.</p>
+
+    <div class="feature-section-grid">
+      <div class="feature-section-card">
+        <i class="fas fa-drum-steelpan"></i>
+        <h3>Tailor Sewing</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+      </div>
+      <div class="feature-section-card">
+        <i class="fas fa-scissors"></i>
+        <h3>Custom Fit</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+      </div>
+      <div class="feature-section-card">
+        <i class="fas fa-tshirt"></i>
+        <h3>Premium Quality</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+      </div>
+      <div class="feature-section-card">
+        <i class="fas fa-truck"></i>
+        <h3>Fast Delivery</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- find us section  -->
+
+
+  
+  <!-- Find Us Section -->
+ <div class="contact-map-box">
+  <h2>Find <span class="highlight">Us</span></h2>
+  <div class="map-container">
+  
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.947415174109!2d86.41973339678957!3d23.7848868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6bdbeacc5a9dd%3A0x3ab572cfc0249216!2sHowrah%20Motor%20Road!5e0!3m2!1sen!2sin!4v1754508702116!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      width="100%" 
+      height="400" 
+      style="border:0; border-radius: 10px;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</div>
+
+
+
+  <!-- footer section  -->
+   
+<!-- footer  -->
+
+<footer class="farhanpharma-footer">
+  <div class="footer-content">
+    <div class="footer-about">
+      <h2>Rely <span>Tailors</span></h2>
+      <p>Crafting elegance through bespoke tailoring. From everyday wear to occasion attire, designed to fit your style perfectly.</p>
+      <div class="footer-address">
+        <p><i class="fa-solid fa-location-dot"></i> RELY TAILORS
+        <br>Purana Bazar, Hawrah Motor, HGM Road, Dhanbad 📍</p>
+        <p><i class="fa-solid fa-phone"></i> +971 55 555 5555</p>
+        <p><i class="fa-solid fa-envelope"></i> info@relytailors.com</p>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Our Collection</a></li>
+        <li><a href="#">Book Appointment</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <p class="dev-credit">Developer Credit<br><br><span>Tabish Farhan</span></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 RelyTailors. All rights reserved.
+  </div>
+</footer>
+
+
+<script src="../js/about.js"></script>
+<!-- <script src="../data.json"></script> -->
+</body>
+</html>
